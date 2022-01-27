@@ -41,6 +41,7 @@ public class UserInterface {
 
     }
 }
-//Notes
+
+//nots
 //main/enter(psvm/enter):mainclass
 //(sout):(Systems.out.println())
