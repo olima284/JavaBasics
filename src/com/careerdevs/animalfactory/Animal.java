@@ -5,16 +5,16 @@ public class Animal {
     public String species;
     public float speedMPH;
     public boolean isTerrestrial;
-    public short legs;
+   public short legs;
     public String animalName;
 
 //2)Constructor/s
 
-    public Animal(String species, float speedMPH, Boolean isTerrestrial, short legs, String animalName) {
+    public Animal(String species, float speedMPH, Boolean isTerrestrial, short legs, String animalName ) {
         this.species =species;
+        this.speedMPH = speedMPH;
         this.isTerrestrial = isTerrestrial;
         this.legs = legs;
-        this.speedMPH = speedMPH;
         this.animalName = animalName;
 
     }
@@ -30,7 +30,7 @@ public class Animal {
                 "species='" + species + '\'' +
                 ", speedMPH=" + speedMPH +
                 ", isTerrestrial=" + isTerrestrial +
-                ", legs=" + legs +
+               ", legs=" + legs +
                 ", animalName='" + animalName + '\'' +
                 '}';
     }
