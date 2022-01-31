@@ -2,7 +2,7 @@ package com.careerdevs.animalfactory;
 
 import java.util.Scanner;
 
-public class Main {
+public class MainAnimal {
     public static void main(String[] args) {
 
 
