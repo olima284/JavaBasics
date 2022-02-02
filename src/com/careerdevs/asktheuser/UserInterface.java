@@ -3,9 +3,57 @@ package com.careerdevs.asktheuser;
 import java.util.Scanner;
 
 public class UserInterface {
-    public static void main(String[] args) {
+    public String userName;
+    public byte userAge;
+    public int weeklyUserViews;
+    short newWeeklyUsers;
+    public long totalViewsPerYear;
+    public float monthlyEarning;
+    public double yearlyEarningPercent;
+    public boolean giveUserAStar;
 
-        Scanner scanner = new Scanner(System.in);
+
+    public UserInterface(String userName, byte userAge, int  weeklyUserViews, short newWeeklyUsers,  long totalViewsPerYear, float monthlyEarning, double yearlyEarningPercent, boolean giveUserAStar) {
+     this.userName = userName;
+     this.userAge = userAge;
+     this.weeklyUserViews = weeklyUserViews;
+     this.newWeeklyUsers =  newWeeklyUsers;
+     this.totalViewsPerYear = totalViewsPerYear;
+     this.monthlyEarning = monthlyEarning;
+     this.yearlyEarningPercent = yearlyEarningPercent;
+     this.giveUserAStar = giveUserAStar;
+    }
+
+    @Override
+    public String toString() {
+        return "UserInterface{" +
+                "userName='" + userName + '\'' +
+                ", userAge=" + userAge +
+                ", weeklyUserViews=" + weeklyUserViews +
+                ", newWeeklyUsers=" + newWeeklyUsers +
+                ", totalViewsPerYear=" + totalViewsPerYear +
+                ", monthlyEarning=" + monthlyEarning +
+                ", yearlyEarningPercent=" + yearlyEarningPercent +
+                ", giveUserAStar=" + giveUserAStar +
+                '}';
+    }
+}
+
+    //enter name
+    //enter age
+    //max < 2000
+    //min > 200
+    //named person enter views total (anything more min earns star)
+    //yearly earning
+    //boolean = true if max || min && !over(age of 18)
+
+
+
+//notes
+//main/enter(PSVM/enter):mainClass
+//(sout):(Systems.out.println())
+
+// Scanner scanner = new Scanner(System.in);
 //String--> scanner.nextString()
 //        System.out.println("name: ");
 //        String userName = scanner.nextLine();
@@ -14,11 +62,11 @@ public class UserInterface {
 //        System.out.println("age: ");
 //        Byte userAge = scanner.nextByte();
 //        System.out.println("How old are you " + userAge);
-        //
+//
 //int --> scanner.nextInt();
-        // int userWeeklyViews = 4000
-        // scanner.nextInt();
-        //System.out.println("new users per week" + userWeeklyViews );
+// int userWeeklyViews = 4000
+// scanner.nextInt();
+//System.out.println("new users per week" + userWeeklyViews );
 
 ////float --> scanner.nextFloat();
 //        System.out.print("Enter the amount: ");
@@ -38,10 +86,3 @@ public class UserInterface {
 //        if(bn == true) {
 //            System.out.println( "You are over 30");
 //        }
-
-    }
-}
-
-//nots
-//main/enter(psvm/enter):mainclass
-//(sout):(Systems.out.println())

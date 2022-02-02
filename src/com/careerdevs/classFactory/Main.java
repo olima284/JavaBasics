@@ -16,8 +16,14 @@ public class Main {
         System.out.println("Enter field of study here: ");
         String fieldOfStudy = scan.nextLine();
 
-        System.out.println("Enter gpa here:");
-        Boolean gpaIsEligible = scan.nextBoolean();
+        System.out.println("Is you GPA over 3.0");
+
+        Boolean gpaIsEligible;
+        if (!scan.nextBoolean()) {
+            gpaIsEligible = false;
+        } else {
+            gpaIsEligible = true;
+        }
 
         System.out.println(" Enter Monthly income here: \n");
         float roundMonthlyIncome = scan.nextFloat();
