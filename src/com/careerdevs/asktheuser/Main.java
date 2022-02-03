@@ -41,8 +41,12 @@ public class Main {
 
 
     System.out.println(totalViewsPerYear > 2000l);
-    boolean giveUserAStar= scan.nextBoolean();
-    System.out.println( giveUserAStar );
+    boolean giveUserAStar = totalViewsPerYear > 2000L;
+   if (giveUserAStar) {
+       System.out.println( "YOU HAVE A STAR!");
+   } else {
+       System.out.println("YOU DO NOT GET A STAR!");
+   }
 
 
 

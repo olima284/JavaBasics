@@ -6,7 +6,7 @@ public class UserInterface {
     public String userName;
     public byte userAge;
     public int weeklyUserViews;
-    short newWeeklyUsers;
+    public short newWeeklyUsers;
     public long totalViewsPerYear;
     public float monthlyEarning;
     public double yearlyEarningPercent;
