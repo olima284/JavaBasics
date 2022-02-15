@@ -8,9 +8,9 @@ public class CountDown {
     }
     private static void iterative (int countDownFrom){
         //option 1
-//      for (int i = 0; i < countDownFrom; i++){
-//      System.out.println(i);
-  //  }
+     for (int i = 0; i < countDownFrom; i++){
+     System.out.println(i);
+  }
     //opt 2
 //      for (int i = countDownFrom; i > 0; i--){
 //      System.out.println(i);
