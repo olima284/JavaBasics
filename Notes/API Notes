@@ -6,13 +6,89 @@ Partner and composite
 
 What is the definition of an API?
 
-Application Programming Interface
+                    Application Programming Interface
 
-When you use an application on your mobile phone, the application
-connects to the Internet and sends data to a server. The server then retrieves that data, interprets it, performs the necessary actions and sends it back to your phone
+**Simply put, an API is program designed to transfer data from one application to another We should think about an API as a messenger of data.****
 
-What is the primary purpose in Web based applications?
+When you use an application on your mobile phone,
+the application connects to the Internet and sends data to a server.
+The server then retrieves that data, interprets it, performs the necessary actions and sends it back to your phone
 
-They work as the middle man, allowing developers to build new programmatic interactions between the various applications people and businesses use on a daily basis.
+                         Web based applications?
+***What is a Web based applications?
+any program that is accessed over a network connection using HTTP, rather than existing within a device’s memory. Web-based applications often run inside a web browser.
 
-A web-based application is any application that uses a website as the interface or front-end. Users can easily access the application from any computer connected to the Internet using a standard browser.
+**Primary purpose in Web based applications?
+
+>They work as the middle man, allowing developers to build new programmatic interactions between the various applications people and businesses
+ use on a daily basis.
+
+>A web-based application is any application that uses a website as the interface or front-end.
+
+>Users can easily access the application from any computer connected to the Internet using a standard browser.
+
+
+
+                            Endpoint
+           ** Is the entry point into our API server**
+
+       >API Endpoint is a fancy word for URL server or service
+       >URl uniform resource locator<<“web address”>
+       >identifies the “location” of a certain “place” on the Internet
+
+                        Start-point
+                   **protocol identifier **
+
+       >Hypertext Transfer Protocol (HTTP)
+       >HTTPS can be used for secure transmission
+       > FTP can be used for file transfer
+       >HTTP (request) tells the receiving API to perform an action related to data.
+       >>ACTIONS : Creating, Reading, Updating, or Deleting data.>>
+       >>Create -> POST: Makes a new piece of data in a database
+         Read -> GET: Retrieves a resource (database data)
+         Update -> PATCH/PUT: Updates a resource in a database
+         Delete -> DELETE: Removes a resource from a database
+
+>>These protocols are simply represented by the appropriate keyword (e.g., ftp) followed by the :// ending in the URL.<<
+
+
+                                 Designator
+        >.com - designator is a commercial organization
+        >.org - is a nonprofit group
+        >.edu - is an educational group
+        > gives an idea of the type of organization that is providing the Web service
+
+
+
+               WebAPI SpringBoot
+               **Route/ @RestContorller**
+        > a class/file/section of code >
+        > Designed to handle incoming request
+        > A Router may contain many route hanlders
+                @restContorllers > is an annotation we use to make a router "class" in SpringBoot
+        > Controllers -
+        > @RestContorllers/Route is classs /file/section of code\
+        > Route handler are smarter parts within the Route
+        >>@postmapping( "/info")
+        >>Method:Post
+        >>Path:Info
+        >>Host:local Host port  number
+
+        @GETMAPING
+        @PostMapping
+        @
+
+
+
+NASA API Key
+Generate API Key
+Your API key for olivialima.student@careerdevs.com is:
+
+sKewRHb982KWI7QoEKZ9YhdLwkLpdzAcht9Jrnwe
+You can start using this key to make web service requests. Simply pass your key in the URL when making a web request. Here's an example:
+
+https://api.nasa.gov/planetary/apod?api_key=sKewRHb982KWI7QoEKZ9YhdLwkLpdzAcht9Jrnwe
+For additional support, please contact us. When contacting us, please tell us what API you're accessing and provide the following account details so we can quickly find you:
+
+Account Email: olivialima.student@careerdevs.com
+Account ID: df4bb264-236f-45c5-91e1-ae2f48a47fdb
