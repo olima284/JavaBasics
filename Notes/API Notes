@@ -76,7 +76,14 @@ any program that is accessed over a network connection using HTTP, rather than e
 
         @GETMAPING
         @PostMapping
-        @
+
+
+        GABE EXP:
+Route Handler - a piece of code (a method in Java/S.B.) that handles a specific API request.
+Best practice dictates: A route-handler should be set to only execute when a specific path is request and a specific HTTP method is used to make the request.
+RequestMapping - in Spring Boot, the @RequestMapping annotation is used to create a route-handler. This annotation can also be used on classes (controllers) as well.
+When using @RequestMapping on a method you should always use a specific version of @RequestMapping such as @GetMapping to create a route-handler for a GET request.
+When used on a controller class, you should use @RequestMapping so that the controller is not HTTP method specific.
 
 
 
